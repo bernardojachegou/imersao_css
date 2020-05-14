@@ -1,40 +1,83 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Oxygen Mono', monospace;
+}
 
-  body {
-    font-family: 'Balsamiq Sans', cursive;
-  }
+body {
+  background-image: url('../img/athome.jpg');
+}
 
-  /* NAVIGATION BAR */ 
-  .menu {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-  }
+/* NAVIGATION BAR */
 
-  .menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  .menu ul li {
-    float: left;
-  }
-  
-  .menu ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .menu ul li a:hover {
-    background-color: #00a38d;
-  }
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  opacity: 0.5;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.menu ul li {
+  float: left;
+}
+
+.menu ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  color: #333;
+  background-color: #FFEBCD;
+}
+
+.titulo-principal {
+  padding: 40px;
+  margin: 20px;
+  text-align: left;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h1, h2 {
+  color: #FFDEAD;
+  text-shadow: 2px 3px #333;
+}
+
+.sobre {
+  display: flex;
+  margin-left: 5%;
+  width: 600px;
+  height: 600px;
+  background-color: #FFEBCD;
+  box-shadow: 0 4px 16px -12px;
+  border-radius: 15px 100px 30px;
+  border: solid 1px #333;
+  opacity: 0.5;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 40px;
+  color: #333;
+}
