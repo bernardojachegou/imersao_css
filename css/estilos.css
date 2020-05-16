@@ -33,10 +33,10 @@ body {
 
 .menu ul li a {
   display: block;
-  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  color: #FFEBCD;
 }
 
 .menu ul li a:hover {
@@ -44,40 +44,100 @@ body {
   background-color: #FFEBCD;
 }
 
-.titulo-principal {
-  padding: 40px;
-  margin: 20px;
-  text-align: left;
-}
-
-h1 {
-  font-size: 70px;
-}
-
-h2 {
-  font-size: 40px;
-}
-
-h1, h2 {
-  color: #FFDEAD;
-  text-shadow: 2px 3px #333;
-}
-
-.sobre {
+/* HOME SECTION */
+.home-section {
   display: flex;
-  margin-left: 5%;
-  width: 600px;
-  height: 600px;
-  background-color: #FFEBCD;
-  box-shadow: 0 4px 16px -12px;
-  border-radius: 15px 100px 30px;
-  border: solid 1px #333;
-  opacity: 0.5;
+  margin: 70px;
+  justify-content: space-between;
+}
+
+/* DIV DA HOME SECTION */
+
+.caixa-grande-esquerda, .caixa-grande-direita{
+  display: flex;
+  margin: 20px;
   align-items: center;
   justify-content: center;
 }
 
-p {
-  font-size: 40px;
-  color: #333;
+/* DIV DAS CAIXAS GRANDES */
+
+.caixa-grande-esquerda {
+  flex-direction: column;
+  width: 700px;
+  height: 700px;
+}
+
+.caixa-grande-direita {
+  width: 900px;
+  height: 700px;
+}
+
+.caixa-media-a, .caixa-media-b {
+  width: 600px;
+  height: 300px;
+  margin: 20px;
+}
+
+.caixa-media-b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: orange;
+  opacity: 0.5;
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+
+.caixa-media-c {
+  width: 800px;
+  height: 600px;
+  margin: 20px;
+}
+
+/* TÍTULO DA HOME */
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h1, h2 {
+  margin: 15px;
+  color: orange;
+  text-shadow: 2px 3px #333;
+}
+
+/* MINHA HISTÓRIA */
+
+.minha-historia {
+  margin: 20px;
+  font-size: 30px;
+  color: orange;
+}
+
+/* FRASE MOTIVACIONAL */
+
+.frase {
+  font-size: 16px;
+  color: white;
+  margin: 20px;
+  margin-right: 100px;
+  text-align: justify;
+}
+
+.minha-historia, .frase {
+  text-align: justify;
+}
+
+.contatos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  padding: 15px;
 }
