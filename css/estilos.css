@@ -7,7 +7,10 @@
 }
 
 body {
-  background-image: url('../img/athome.jpg');
+  background-image: url('../img/creative.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 /* NAVIGATION BAR */
@@ -16,7 +19,6 @@ body {
   position: fixed;
   top: 0;
   width: 100vw;
-  opacity: 0.5;
 }
 
 .menu ul {
@@ -36,7 +38,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  color: #FFEBCD;
+  color: orange;
 }
 
 .menu ul li a:hover {
@@ -45,6 +47,7 @@ body {
 }
 
 /* HOME SECTION */
+
 .home-section {
   display: flex;
   margin: 70px;
@@ -53,7 +56,7 @@ body {
 
 /* DIV DA HOME SECTION */
 
-.caixa-grande-esquerda, .caixa-grande-direita{
+.caixa-grande-esquerda, .caixa-grande-direita {
   display: flex;
   margin: 20px;
   align-items: center;
@@ -84,7 +87,6 @@ body {
   align-items: center;
   justify-content: center;
   background: orange;
-  opacity: 0.5;
   clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
 }
 
@@ -105,24 +107,22 @@ h2 {
 }
 
 h1, h2 {
-  margin: 15px;
-  color: orange;
-  text-shadow: 2px 3px #333;
+    color: orange;
 }
 
 /* MINHA HISTÓRIA */
 
 .minha-historia {
   margin: 20px;
-  font-size: 30px;
-  color: orange;
+  font-size: 40px;
+  color: greenyellow;
 }
 
 /* FRASE MOTIVACIONAL */
 
 .frase {
-  font-size: 16px;
-  color: white;
+  font-size: 22px;
+  color: rgb(34, 33, 33);
   margin: 20px;
   margin-right: 100px;
   text-align: justify;
@@ -140,4 +140,32 @@ h1, h2 {
 
 .icons {
   padding: 15px;
+  opacity: 0.4;
+}
+
+.icons:hover {
+  opacity: 1.0;
+}
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-size:4em;
+  text-align:center;
+  height:200px;
+  width:600px; 
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
 }
