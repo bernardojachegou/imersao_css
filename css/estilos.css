@@ -1,3 +1,5 @@
+/* CONFIGURAÇÃO GLOBAL */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,14 +8,16 @@
   font-family: 'Oxygen Mono', monospace;
 }
 
+/* CONFIGURAÇÃO DE PLANO DE FUNDO */
+
 body {
-  background-image: url('../img/creative.jpeg');
+  background-image: url('../img/gradient.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-/* NAVIGATION BAR */
+/* CONFIGURAÇÃO DO MENU */
 
 .menu {
   position: fixed;
@@ -26,7 +30,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
 }
 
 .menu ul li {
@@ -38,32 +42,29 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  color: orange;
+  color: white;
 }
 
 .menu ul li a:hover {
-  color: #333;
-  background-color: #FFEBCD;
+  background-color: red;
 }
 
-/* HOME SECTION */
+/* CONFIGURAÇÃO DA HOME */
 
 .home-section {
   display: flex;
   margin: 70px;
   justify-content: space-between;
+  background-color: black;
 }
-
-/* DIV DA HOME SECTION */
 
 .caixa-grande-esquerda, .caixa-grande-direita {
   display: flex;
   margin: 20px;
   align-items: center;
   justify-content: center;
+  background-color: red;
 }
-
-/* DIV DAS CAIXAS GRANDES */
 
 .caixa-grande-esquerda {
   flex-direction: column;
@@ -72,7 +73,8 @@ body {
 }
 
 .caixa-grande-direita {
-  width: 900px;
+  flex-direction: column;
+  width: 700px;
   height: 700px;
 }
 
@@ -80,66 +82,62 @@ body {
   width: 600px;
   height: 300px;
   margin: 20px;
+  background-color: black;
 }
 
 .caixa-media-b {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: orange;
+  background: black;
   clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
 }
 
 .caixa-media-c {
-  width: 800px;
-  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 300px;
   margin: 20px;
+  background-color: black;
 }
 
-/* TÍTULO DA HOME */
-
-h1 {
-  font-size: 60px;
-}
-
-h2 {
-  font-size: 35px;
-}
-
-h1, h2 {
-    color: orange;
-}
-
-/* MINHA HISTÓRIA */
-
-.minha-historia {
+.caixa-media-d {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 300px;
   margin: 20px;
-  font-size: 40px;
-  color: greenyellow;
+  background-color: white;
 }
 
-/* FRASE MOTIVACIONAL */
+/* CONFIGURAÇÕES DE TEXTO */
 
-.frase {
+.texto-caixa-media-c {
+  margin: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.texto-caixa-media-b {
   font-size: 22px;
-  color: rgb(34, 33, 33);
   margin: 20px;
   margin-right: 100px;
   text-align: justify;
 }
 
-.minha-historia, .frase {
-  text-align: justify;
-}
-
-.contatos {
+.div-contatos {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* CONFIGURAÇÕES DOS ÍCONES SVG'S */
+
 .icons {
-  padding: 15px;
+  padding: 20px;
   opacity: 0.4;
 }
 
@@ -147,25 +145,28 @@ h1, h2 {
   opacity: 1.0;
 }
 
+/* CONFIGURAÇÕES DO TEXTO COM JS */
+
 .hidden {
-  opacity:0;
+  opacity: 0;
 }
+
 .console-container {
- 
-  font-size:4em;
-  text-align:center;
-  height:200px;
-  width:600px; 
-  color:white;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
+  font-size: 4em;
+  text-align: center;
+  height: 200px;
+  width: 600px;
+  color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
+
 .console-underscore {
-  display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:10px;
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
 }
