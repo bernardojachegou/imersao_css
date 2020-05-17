@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Imersão CSS - Alura
+  Imersão CSS - Alura (https://www.alura.com.br/imersao-css)
 </h3>
 
 ## :book: Sobre o projeto:
